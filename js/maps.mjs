@@ -46,6 +46,3 @@ export default class Maps {
 		document.getElementsByClassName("maps-div").innerHtml = htmlString;
 	}
 }
-
-//const maps = new Maps();
-//maps.init();

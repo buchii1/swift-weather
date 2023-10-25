@@ -72,7 +72,7 @@ export default class Forecast {
 		document.getElementById(`five-day-forecast-sections`).innerHTML = "";
 
 		for (let i in dataObject.list) {
-			//Use destructoring to enable readable code and pull specific properties from our object
+			//Use destructuring to enable readable code and pull specific properties from our object
 			//getting the data from the dataObject.list, since this is a for loop, each const represents an individual (3) hourly forecast value
 			const { temp_max, temp_min } = dataObject.list[i].main;
 			const { speed } = dataObject.list[i].wind;
@@ -257,25 +257,18 @@ export default class Forecast {
 		document.getElementById("next-button").addEventListener("click", () => {
 			if (slide_position === slides.length) {
 				slide_position = 1;
-				//console.log(slide_position);
 			} else {
 				slide_position++;
-				//console.log(slide_position);
 			}
 			updateSlidePosition();
 		});
 		document.getElementById("prev-button").addEventListener("click", () => {
 			if (slide_position === 1) {
 				slide_position = slides.length;
-				//console.log(slide_position);
 			} else {
 				slide_position--;
-				//console.log(slide_position);
 			}
 			updateSlidePosition();
 		});
 	}
 }
-
-// const forecast_placeholder = new Forecast("41.2230", "-111.9738", "imperial");
-// forecast_placeholder.init();

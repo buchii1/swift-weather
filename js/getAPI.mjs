@@ -31,15 +31,6 @@ export default class GetAPI {
 		displayElement(fiveDayForcast, "flex");
 	}
 
-	// //A function that fetches the geo location of a city
-	// async getGeoAPI() {
-	//   const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${this.city}&appid=850f85405ab713d96880a077b3067953`);
-	//   const geoAPI = await response.json();
-	//   //USE A TRY CATCH TO HANDLE THE ERROR IF THE CITY ISN'T FOUND IN THE API
-	//   this.longitude = geoAPI.coord.lon;
-	//   this.latitude = geoAPI.coord.lat;
-
-	// }
 
 	//A function that creates an instance of the WeatherSummary Class
 	async getCurrentWeather() {
@@ -60,9 +51,6 @@ export default class GetAPI {
 			this.degreeType
 		);
 		forecast.init();
-
-		//const response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?lat=${this.latitude}&lon=${this.longitude}&appid=850f85405ab713d96880a077b3067953`);
-		//this.forecastAPI = await response.json();
 	}
 
 	//A function that creates an instance of the Maps Class
