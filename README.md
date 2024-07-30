@@ -16,7 +16,7 @@ Swift Weather is designed to deliver accurate and up-to-date weather information
 
 ## Live Demo
 
-You can view the live demo of the project [here](https://buchii1.github.io/wdd330-final-project/).
+You can view the live demo of the project [here](https://buchii1.github.io/swift-weather/).
 
 ## Installation
 
